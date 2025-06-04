@@ -1,11 +1,11 @@
 import { debounce, isString } from 'lodash-es';
 import { Accessor, children, Component, createEffect, createSignal, JSX, mergeProps, on, onCleanup } from 'solid-js';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { classNames } from '/@/utils/dom/style';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { classNames } from '@/utils/dom/style';
 import { arrow, autoPlacement, computePosition, flip, Middleware, offset, Placement, shift, Strategy } from '@floating-ui/dom'
-import { useClickOutside } from '/@/hooks/use-click-outside';
+import { useClickOutside } from '@/hooks/use-click-outside';
 import { Transition } from 'solid-transition-group';
-import { nextTick } from '/@/utils/function';
+import { nextTick } from '@/utils/function';
 import { Portal } from 'solid-js/web';
 
 export interface PopperProps {

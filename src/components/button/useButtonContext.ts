@@ -1,5 +1,5 @@
 import { createContext, useContext } from "solid-js";
-import { ComponentSize } from "/@/constants/size";
+import { ComponentSize } from "@/constants/size";
 
 export interface ButtonGroupInstance {
   size?: ComponentSize;

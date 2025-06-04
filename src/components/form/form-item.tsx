@@ -2,10 +2,10 @@ import AsyncValidator from 'async-validator'
 import type { RuleItem } from 'async-validator';
 import { castArray, get, isBoolean, isFunction, isString } from 'lodash-es';
 import { Component, createEffect, createMemo, createSignal, mergeProps, on, onCleanup, onMount, Show } from 'solid-js';
-import { useGlobalConfig } from '/@/effect-hooks/use-global-config';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { createDebouncedSignal } from '/@/hooks/create-debounced-signal';
-import { addUnit, classNames } from '/@/utils/dom/style';
+import { useGlobalConfig } from '@/effect-hooks/use-global-config';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { createDebouncedSignal } from '@/hooks/create-debounced-signal';
+import { addUnit, classNames } from '@/utils/dom/style';
 import { FormItemContextInstance, FormItemProps, FormItemRule, FormItemValidateState, FormValidateCallback, FormValidateFailure } from './type';
 import { useFormContext } from './useFormContext';
 import { FormItemContext, useFormItemContext } from './useFormItemContext';

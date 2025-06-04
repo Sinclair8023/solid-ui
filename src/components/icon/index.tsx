@@ -1,8 +1,8 @@
 import { Component, createEffect, onMount, splitProps, JSX } from 'solid-js';
 import Iconify from '@purge-icons/generated';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { throwError } from '/@/utils/error';
-import { classNames } from '/@/utils/dom/style';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { throwError } from '@/utils/error';
+import { classNames } from '@/utils/dom/style';
 
 interface IconProps extends JSX.HTMLAttributes<Recordable> {
   icon: string;

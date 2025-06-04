@@ -1,10 +1,10 @@
 import { ValidateFieldsError } from "async-validator";
 import { castArray, isFunction } from "lodash-es";
 import { Component, createEffect, createMemo, mergeProps, on } from "solid-js";
-import { useGlobalConfig } from "/@/effect-hooks/use-global-config";
-import { useNamespace } from "/@/effect-hooks/use-namespace";
-import { classNames } from "/@/utils/dom/style";
-import { debugWarn } from "/@/utils/error";
+import { useGlobalConfig } from "@/effect-hooks/use-global-config";
+import { useNamespace } from "@/effect-hooks/use-namespace";
+import { classNames } from "@/utils/dom/style";
+import { debugWarn } from "@/utils/error";
 import { FormContextInstance, FormInstance, FormItemContextInstance, FormProps, FormValidateCallback } from "./type";
 import { FormContext } from "./useFormContext";
 

@@ -1,11 +1,11 @@
 import { Component, createEffect, createSignal, JSX, Show, Switch, Match, on, mergeProps } from "solid-js";
-import { ValiadteIconMap } from "/@/constants/icon";
-import { useFormItem } from "/@/effect-hooks/use-form-item";
-import { useNamespace } from "/@/effect-hooks/use-namespace";
-import { classNames } from "/@/utils/dom/style";
-import { debugWarn } from "/@/utils/error";
+import { ValiadteIconMap } from "@/constants/icon";
+import { useFormItem } from "@/effect-hooks/use-form-item";
+import { useNamespace } from "@/effect-hooks/use-namespace";
+import { classNames } from "@/utils/dom/style";
+import { debugWarn } from "@/utils/error";
 import Icon from "../icon";
-import { useDisabled, useSize } from "/@/effect-hooks/use-comon-props";
+import { useDisabled, useSize } from "@/effect-hooks/use-comon-props";
 
 type InputRefGetter = (el: InputInstance) => void
 interface InputProps extends Omit<JSX.HTMLAttributes<InputInstance>, 'prefix' | 'onChange' | 'onInput'> {

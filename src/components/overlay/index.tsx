@@ -1,6 +1,6 @@
 import { Component, JSX, mergeProps, splitProps} from 'solid-js';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { classNames, mergeStyle } from '/@/utils/dom/style';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { classNames, mergeStyle } from '@/utils/dom/style';
 
 export interface OverlayProps extends JSX.HTMLAttributes<HTMLDivElement> {
   mask?: boolean;

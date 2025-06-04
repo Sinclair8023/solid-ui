@@ -1,8 +1,8 @@
 import { createMemo } from "solid-js";
-import { ComponentSize } from "/@/constants/size";
+import { ComponentSize } from "@/constants/size";
 import { useFormItem } from "../use-form-item";
 import { useGlobalConfig } from "../use-global-config";
-import { MaybeAccessor, unAccessor } from "/@/hooks/type";
+import { MaybeAccessor, unAccessor } from "@/hooks/type";
 
 export function useSize(props: { size?: ComponentSize }, fallback?: MaybeAccessor<ComponentSize>) {
   const { form, formItem } = useFormItem();

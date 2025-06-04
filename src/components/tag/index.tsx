@@ -1,10 +1,10 @@
 import { Component, JSX, mergeProps, Show } from 'solid-js';
 import { Transition } from 'solid-transition-group';
 import Icon from '../icon';
-import { ComponentSize } from '/@/constants/size';
-import { useSize } from '/@/effect-hooks/use-comon-props';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { classNames, mergeStyle } from '/@/utils/dom/style';
+import { ComponentSize } from '@/constants/size';
+import { useSize } from '@/effect-hooks/use-comon-props';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { classNames, mergeStyle } from '@/utils/dom/style';
 
 export interface TagProps extends JSX.HTMLAttributes<unknown> {
   closable?: boolean;

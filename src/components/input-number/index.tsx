@@ -2,13 +2,13 @@ import { isNil, isNumber, isString, isUndefined } from "lodash-es";
 import { Component, createEffect, createSignal, JSX, mergeProps, on, Show } from "solid-js";
 import Icon from "../icon";
 import Input, { InputInstance } from "../input";
-import { ComponentSize } from "/@/constants/size";
-import { useDisabled, useSize } from "/@/effect-hooks/use-comon-props";
-import { useFormItem } from "/@/effect-hooks/use-form-item";
-import { useLocale } from "/@/effect-hooks/use-locale";
-import { useNamespace } from "/@/effect-hooks/use-namespace";
-import { classNames } from "/@/utils/dom/style";
-import { debugWarn } from "/@/utils/error";
+import { ComponentSize } from "@/constants/size";
+import { useDisabled, useSize } from "@/effect-hooks/use-comon-props";
+import { useFormItem } from "@/effect-hooks/use-form-item";
+import { useLocale } from "@/effect-hooks/use-locale";
+import { useNamespace } from "@/effect-hooks/use-namespace";
+import { classNames } from "@/utils/dom/style";
+import { debugWarn } from "@/utils/error";
 
 export interface InputNUmberInstance {
   focus: () => void;

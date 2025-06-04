@@ -1,5 +1,5 @@
 import { createContext, useContext } from "solid-js";
-import { ComponentSize } from "/@/constants/size";
+import { ComponentSize } from "@/constants/size";
 import { Language } from "../../locale";
 
 const defaultContext: Partial<GlobalConfig> = { size: 'default' }

@@ -1,10 +1,10 @@
 import { throttle } from 'lodash-es';
 import { createSignal, mergeProps, onMount, Show } from 'solid-js';
 import type { Component, JSX } from 'solid-js'
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { useEventListener } from '/@/hooks/use-event-listener';
-import { addUnit, classNames } from '/@/utils/dom/style';
-import { throwError } from '/@/utils/error';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { useEventListener } from '@/hooks/use-event-listener';
+import { addUnit, classNames } from '@/utils/dom/style';
+import { throwError } from '@/utils/error';
 import Icon from '../icon';
 import { Transition } from 'solid-transition-group';
 

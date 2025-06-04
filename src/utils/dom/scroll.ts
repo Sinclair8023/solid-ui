@@ -7,8 +7,8 @@ export const isScroll = (el: HTMLElement, isVertical?: boolean): boolean => {
   const key = (
     {
       undefined: 'overflow',
-      true: 'overflow-y',
-      false: 'overflow-x',
+      true: 'overflowY',
+      false: 'overflowX',
     } as const
   )[String(isVertical)]!
   const overflow = getStyle(el, key)

@@ -1,11 +1,11 @@
 import { Component, createSignal, JSX, mergeProps, onMount,} from 'solid-js';
 import { Transition } from 'solid-transition-group';
 import Icon from '../icon';
-import { TypeIconMap } from '/@/constants/icon';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { useZIndex } from '/@/effect-hooks/use-z-index';
-import { useResizeObserver } from '/@/hooks/use-resize-observer';
-import { addUnit, classNames } from '/@/utils/dom/style';
+import { TypeIconMap } from '@/constants/icon';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { useZIndex } from '@/effect-hooks/use-z-index';
+import { useResizeObserver } from '@/hooks/use-resize-observer';
+import { addUnit, classNames } from '@/utils/dom/style';
 
 
 export interface MessageProps extends JSX.HTMLAttributes<MessageInstance> {

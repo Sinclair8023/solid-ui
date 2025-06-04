@@ -1,6 +1,6 @@
 import { onCleanup, onMount } from "solid-js"
 import { isServer } from "solid-js/web"
-import { EVENT_CODE } from "/@/constants/aria"
+import { EVENT_CODE } from "@/constants/aria"
 
 
 let registeredEscapeHandlers: ((e: KeyboardEvent) => void)[] = []

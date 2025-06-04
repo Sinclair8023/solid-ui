@@ -1,7 +1,7 @@
 import { Component, createSignal, mergeProps, Show, JSX } from "solid-js";
-import { TypeIconMap } from "/@/constants/icon";
-import { useNamespace } from "/@/effect-hooks/use-namespace";
-import { classNames } from "/@/utils/dom/style";
+import { TypeIconMap } from "@/constants/icon";
+import { useNamespace } from "@/effect-hooks/use-namespace";
+import { classNames } from "@/utils/dom/style";
 import Icon from "../icon";
 import { Transition } from "solid-transition-group";
 

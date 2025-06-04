@@ -1,17 +1,17 @@
 import { isBoolean } from 'lodash-es';
 import { Accessor, Component, createEffect, createMemo, JSX, mergeProps, on, Show } from 'solid-js';
 import Icon from '../icon';
-import { ComponentSize } from '/@/constants/size';
-import { EVENT_CODE } from "/@/constants/aria"
-import { useDisabled, useSize } from '/@/effect-hooks/use-comon-props';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { addUnit, classNames, mergeStyle } from '/@/utils/dom/style';
-import { debugWarn, throwError } from '/@/utils/error';
-import { nextTick } from '/@/utils/function';
-import { isPromise } from '/@/utils/is';
-import { useFormItem } from '/@/effect-hooks/use-form-item';
+import { ComponentSize } from '@/constants/size';
+import { EVENT_CODE } from "@/constants/aria"
+import { useDisabled, useSize } from '@/effect-hooks/use-comon-props';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { addUnit, classNames, mergeStyle } from '@/utils/dom/style';
+import { debugWarn, throwError } from '@/utils/error';
+import { nextTick } from '@/utils/function';
+import { isPromise } from '@/utils/is';
+import { useFormItem } from '@/effect-hooks/use-form-item';
 type SwitchValue = boolean | string | number
-export interface SwitchProps extends JSX.HTMLAttributes<SwitchInstance> {
+export interface SwitchProps extends Omit<JSX.HTMLAttributes<SwitchInstance>, 'onChange'> {
   value?: SwitchValue;
   disabled?: boolean;
   loading?: boolean;

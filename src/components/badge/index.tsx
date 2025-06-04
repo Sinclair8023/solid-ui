@@ -1,8 +1,8 @@
 import { isNumber } from "lodash-es";
 import { Component, JSX, mergeProps, Show, splitProps } from "solid-js"
 import { Transition } from "solid-transition-group";
-import { useNamespace } from "/@/effect-hooks/use-namespace";
-import { classNames } from "/@/utils/dom/style";
+import { useNamespace } from "@/effect-hooks/use-namespace";
+import { classNames } from "@/utils/dom/style";
 
 export interface BadgeProps extends JSX.HTMLAttributes<HTMLDivElement> {
   value: string | number;

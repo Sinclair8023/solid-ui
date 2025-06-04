@@ -1,7 +1,7 @@
 import { Component, mergeProps, splitProps } from 'solid-js';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { useLocale } from '/@/effect-hooks/use-locale';
-import { addUnit, classNames } from '/@/utils/dom/style';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { useLocale } from '@/effect-hooks/use-locale';
+import { addUnit, classNames } from '@/utils/dom/style';
 import type { PopperInstance, PopperProps } from '../popper';
 import Button, { ButtonProps } from '../button/button';
 import Icon from '../icon';

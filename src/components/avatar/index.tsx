@@ -1,9 +1,9 @@
 import { isNumber, isString } from 'lodash-es';
 import { Component, JSX, mergeProps, Switch, Match, splitProps, createSignal, createEffect, on } from 'solid-js';
 import Icon from '../icon';
-import { ComponentSize } from '/@/constants/size';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { addUnit, classNames, mergeStyle } from '/@/utils/dom/style';
+import { ComponentSize } from '@/constants/size';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { addUnit, classNames, mergeStyle } from '@/utils/dom/style';
 
 export interface AvatarProps extends JSX.HTMLAttributes<AvatarInstance> {
   size?: ComponentSize | number;

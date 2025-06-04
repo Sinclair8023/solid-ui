@@ -1,6 +1,6 @@
 import { Component, JSX, mergeProps} from 'solid-js';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { classNames } from '/@/utils/dom/style';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { classNames } from '@/utils/dom/style';
 
 export interface SelectProps extends JSX.HTMLAttributes<SelectInstance> {
 

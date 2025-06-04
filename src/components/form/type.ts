@@ -1,6 +1,6 @@
 import { RuleItem, ValidateError, ValidateFieldsError } from "async-validator"
 import { Accessor, JSX } from "solid-js"
-import { ComponentSize } from "/@/constants/size"
+import { ComponentSize } from "@/constants/size"
 
 export interface FormItemRule extends RuleItem {
   trigger?: Arrayable<string>

@@ -14,7 +14,7 @@ import Badge from './components/badge';
 import Avatar from './components/avatar';
 import Popover from './components/popover';
 import Alert from './components/alert';
-import show from '/@/directives/show';
+import show from '@/directives/show';
 import Backtop from './components/backtop';
 import Popper from './components/popper';
 import Popconfirm from './components/popconfirm';

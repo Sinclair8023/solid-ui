@@ -1,11 +1,11 @@
 import { isString } from "lodash-es";
 import { Component, JSX, Show, mergeProps, children, splitProps } from "solid-js";
-import { useGlobalConfig } from "/@/effect-hooks/use-global-config";
-import { useNamespace } from "/@/effect-hooks/use-namespace";
-import { classNames } from "/@/utils/dom/style";
+import { useGlobalConfig } from "@/effect-hooks/use-global-config";
+import { useNamespace } from "@/effect-hooks/use-namespace";
+import { classNames } from "@/utils/dom/style";
 import Icon from "../icon";
 import { useButtonContext, ButtonGroupInstance } from './useButtonContext';
-import { useDisabled, useSize } from "/@/effect-hooks/use-comon-props";
+import { useDisabled, useSize } from "@/effect-hooks/use-comon-props";
 
 export interface ButtonProps extends JSX.HTMLAttributes<HTMLButtonElement>, ButtonGroupInstance {
   disabled?: boolean;

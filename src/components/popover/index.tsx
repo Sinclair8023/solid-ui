@@ -1,7 +1,7 @@
 import { Component, mergeProps, splitProps} from 'solid-js';
 import Popper, { PopperProps } from '../popper';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { classNames } from '/@/utils/dom/style';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { classNames } from '@/utils/dom/style';
 
 export interface PopoverProps extends PopperProps {
   title?: string;

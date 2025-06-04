@@ -4,13 +4,13 @@ import { Transition } from 'solid-transition-group';
 import type { DialogInstance, DialogProps } from '../dialog';
 import Icon from '../icon';
 import Overlay from '../overlay';
-import { useLocale } from '/@/effect-hooks/use-locale';
-import { useNamespace } from '/@/effect-hooks/use-namespace';
-import { useZIndex } from '/@/effect-hooks/use-z-index';
-import { useEscapeKeydown } from '/@/hooks/use-escape-keydown';
-import { useLockscreen } from '/@/hooks/use-lockscreen';
-import { addUnit, classNames } from '/@/utils/dom/style';
-import { nextTick } from '/@/utils/function';
+import { useLocale } from '@/effect-hooks/use-locale';
+import { useNamespace } from '@/effect-hooks/use-namespace';
+import { useZIndex } from '@/effect-hooks/use-z-index';
+import { useEscapeKeydown } from '@/hooks/use-escape-keydown';
+import { useLockscreen } from '@/hooks/use-lockscreen';
+import { addUnit, classNames } from '@/utils/dom/style';
+import { nextTick } from '@/utils/function';
 
 export interface DrawerProps extends Omit<DialogProps, 'draggable'> {
   direction?: 'ltr' | 'rtl' | 'ttb' | 'btt';

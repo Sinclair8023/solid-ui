@@ -1,11 +1,11 @@
 import { Component, createEffect, createSignal, JSX, mergeProps, onMount, batch, onCleanup } from "solid-js";
-import { useElementBounding } from "/@/hooks/use-element-bounding";
-import { useEventListener } from "/@/hooks/use-event-listener";
-import { useNamespace } from "/@/effect-hooks/use-namespace";
-import { useWindowSize } from "/@/hooks/use-window-size";
-import { throwError } from "/@/utils/error";
-import { classNames } from "/@/utils/dom/style";
-import { getScrollContainer } from "/@/utils/dom/scroll";
+import { useElementBounding } from "@/hooks/use-element-bounding";
+import { useEventListener } from "@/hooks/use-event-listener";
+import { useNamespace } from "@/effect-hooks/use-namespace";
+import { useWindowSize } from "@/hooks/use-window-size";
+import { throwError } from "@/utils/error";
+import { classNames } from "@/utils/dom/style";
+import { getScrollContainer } from "@/utils/dom/scroll";
 
 interface AffixProps {
   zIndex?: number;
@@ -51,7 +51,7 @@ const Affix: Component<AffixProps> = (_props) => {
     if (!fixed() || rootRect().width === 0 && rootRect().height === 0) {
       return {}
     }
-    const offset = props.offset ? `${props.offset}px` : 0;
+    const offset = props.offset ? `${props.offset}px` : '0';
     return {
       height: `${rootRect().height}px`,
       width: `${rootRect().width}px`,
@@ -83,9 +83,10 @@ const Affix: Component<AffixProps> = (_props) => {
       return
     }
     const offset = props.offset || 0;
-    setScrollTop(() => scrollContainer() instanceof Window
+    const container = scrollContainer()
+    setScrollTop(() => container instanceof Window
       ? document.documentElement.scrollTop
-      : scrollContainer()?.scrollTop || 0)
+      : container?.scrollTop || 0)
     if (props.position === 'top') {
       if (props.target) {
         const difference = targetRect().bottom - offset - rootRect().height;

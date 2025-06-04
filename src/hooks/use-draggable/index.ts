@@ -2,7 +2,7 @@ import {
   Position, MaybeAccessor, unAccessor
 } from '../type'
 import { createEffect, onCleanup, onMount } from 'solid-js'
-import { addUnit } from '/@/utils/dom/style'
+import { addUnit } from '@/utils/dom/style'
 
 export interface UseDraggableOptions {
   /**

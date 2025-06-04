@@ -1,6 +1,6 @@
 import { Component, JSX, mergeProps, splitProps } from "solid-js";
-import { useNamespace } from "/@/effect-hooks/use-namespace";
-import { classNames } from "/@/utils/dom/style";
+import { useNamespace } from "@/effect-hooks/use-namespace";
+import { classNames } from "@/utils/dom/style";
 import { ButtonGroupContext, ButtonGroupInstance} from './useButtonContext';
 
 export type ButtonGroupProps = ButtonGroupInstance & JSX.HTMLAttributes<HTMLDivElement>;
