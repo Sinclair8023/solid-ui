@@ -1,0 +1,7 @@
+packages:
+  - packages/*
+  - docs
+  - play
+  - internal/*
+catalog:
+  solid-js: ^1.9.7

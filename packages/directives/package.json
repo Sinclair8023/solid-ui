@@ -1,0 +1,13 @@
+{
+  "name": "@solid-ui/directives",
+  "version": "0.0.5",
+  "description": "Solid Ui directives",
+  "license": "MIT",
+  "main": "index.ts",
+  "module": "index.ts",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "peerDependencies": {
+    "solid-js": "catalog:"
+  }
+}

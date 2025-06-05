@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "es2018",
+    "module": "esnext",
+    "baseUrl": ".",
+    "sourceMap": false,
+    "moduleResolution": "node",
+    "allowJs": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "rootDir": ".",
+    "types": [],
+    "typeRoots": ["./node_modules/@types/", "./types"],
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "paths": {
+      "@solid-ui/components": ["packages/components"],
+      "@solid-ui/utils": ["packages/utils"],
+      "@solid-ui/hooks": ["packages/hooks"],
+      "@solid-ui/directives": ["packages/directives"],
+      "@solid-ui/constants": ["packages/constants"],
+      "@solid-ui/locale": ["packages/locale"],
+      "solid-ui": ["packages/solid-ui"]
+    },
+    "preserveSymlinks": true
+  }
+}

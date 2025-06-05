@@ -1,0 +1,14 @@
+{
+  "name": "@solid-ui/hooks",
+  "version": "0.0.5",
+  "description": "Solid Ui composables",
+  "license": "MIT",
+  "main": "index.ts",
+  "module": "index.ts",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "types": "index.d.ts",
+  "peerDependencies": {
+    "solid-js": "catalog:"
+  }
+}

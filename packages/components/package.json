@@ -1,0 +1,16 @@
+{
+  "name": "@solid-ui/components",
+  "version": "0.0.1",
+  "description": "all components are settled here",
+  "main": "index.ts",
+  "module": "index.ts",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "peerDependencies": {
+    "solid-js": "catalog:"
+  },
+  "types": "index.d.ts",
+  "sideEffects": [
+    "*/style/*"
+  ]
+}

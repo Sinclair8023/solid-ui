@@ -10,6 +10,11 @@
     "gen": "bash ./scripts/gc.sh",
     "lint": "eslint ./src --ext .js,.ts,.jsx,.tsx,.md,.json --max-warnings 0"
   },
+  "workspaces": [
+    "packages/*",
+    "play",
+    "docs"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@types/lodash-es": "^4.17.12",
@@ -25,6 +30,13 @@
     "vite-plugin-solid": "^2.11.6"
   },
   "dependencies": {
+    "@solid-ui/components": "workspace:*",
+    "@solid-ui/constants": "workspace:*",
+    "@solid-ui/directives": "workspace:*",
+    "@solid-ui/hooks": "workspace:*",
+    "@solid-ui/locale": "workspace:*",
+    "@solid-ui/theme-chalk": "workspace:*",
+    "@solid-ui/utils": "workspace:*",
     "@floating-ui/dom": "^1.7.1",
     "@purge-icons/generated": "^0.10.0",
     "async-validator": "^4.2.5",
